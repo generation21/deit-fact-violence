@@ -7,7 +7,7 @@
   --color-white: white;
   --font-size: 1rem;
   --font-size-up: 1.2rem;
-  --margin-right-labelbox: 14rem;
+  --margin-right-labelbox: 40%;
   --font-size-mobile: 0.6rem;
   --font-size-up-mobile: 0.8rem;
 }
@@ -15,7 +15,7 @@
   :root {
     --font-size: var(--font-size-mobile);
     --font-size-up: var(--font-size-up-mobile);
-    --margin-right-labelbox:: 1rem
+    --margin-right-labelbox:: 40%
   }
 }
 

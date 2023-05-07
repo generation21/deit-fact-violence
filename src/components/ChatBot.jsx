@@ -62,12 +62,12 @@ export default function ChatBot({ responseFlag, setting }) {
       } else {
         clearInterval(typingAnimation);
       }
-    }, 60);
+    }, 55);
 
     return () => clearInterval(typingAnimation);
   }, [result]);
 
-  if (isLoading) return <div className={styles.loadingSpinner}></div>;
+  if (isLoading) return <MessageCard isLoading={isLoading} />;
   if (error) return <Error />;
 
   const paragraphs = splitMessageIntoParagraphs(displayedResult);

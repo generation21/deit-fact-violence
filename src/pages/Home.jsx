@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Selector from "src/components/Selector";
 import ChatBot from "src/components/ChatBot";
 import LanguageSwitcher from "src/components/LanguageSwitcher";
 import styles from "./Home.module.css";
+import LanguageContext from "src/context/LanguageContext";
 
 export default function Home() {
+  const { language } = useContext(LanguageContext);
+
   const [setting, setSetting] = useState({
     user: "",
     goal: "",
@@ -25,10 +28,10 @@ export default function Home() {
     e.preventDefault();
     setResponseFlage((p) => (p += 1));
     setSetting({ user, goal, food, tone, custom_tone: customTone });
-    // navigate("/chatbot");
   };
 
   const handleOnChageSetting = (e, name) => {
+    console.log(e.target.value);
     switch (name) {
       case "user":
         setUser(e.target.value);
@@ -52,7 +55,12 @@ export default function Home() {
 
   return (
     <>
-      <LanguageSwitcher />
+      <LanguageSwitcher
+        setTone={setTone}
+        setUser={setUser}
+        setFood={setFood}
+        setGoal={setGoal}
+      />
       <div className={styles.container}>
         <Selector
           handleOnChageSetting={handleOnChageSetting}

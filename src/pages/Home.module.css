@@ -1,0 +1,8 @@
+.container {
+  width: 70%;
+  height: 32rem;
+  /* 세로방향 | 가로방향 */
+  margin: 5% auto;
+  background-color: #000000;
+  border-radius: 20px;
+}

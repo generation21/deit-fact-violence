@@ -1,0 +1,21 @@
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #d9534f;
+}
+
+.message {
+  font-size: 24px;
+}

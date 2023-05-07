@@ -1,0 +1,44 @@
+.profile {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  padding: 1rem;
+  /* 세로방향 | 가로방향 */
+  margin: 1% auto;
+  background-color: #ebebeb;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.photo {
+  width: 30%;
+  height: 80%;
+  border-radius: 100%;
+  left: 50%;
+}
+
+.loadingSpinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #4caf50;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.paragraph {
+  margin-bottom: 1rem;
+}

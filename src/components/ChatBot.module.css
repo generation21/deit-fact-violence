@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+.messagesContainer {
+  min-height: 100rem;
+
+  padding: 20px;
+  align-items: cneter;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #4caf50;
+}

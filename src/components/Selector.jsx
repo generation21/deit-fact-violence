@@ -92,7 +92,7 @@ export default function Selector({
         </div>
         <div className={styles.label}>
           {language === "ko"
-            ? "지금먹고싶은 음식은"
+            ? "지금 먹고싶은 음식은"
             : "The food I want to eat right now is"}
 
           <input

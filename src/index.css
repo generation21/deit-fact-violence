@@ -7,6 +7,16 @@
   --color-white: white;
   --font-size: 1rem;
   --font-size-up: 1.2rem;
+  --margin-right-labelbox: 14rem;
+  --font-size-mobile: 0.6rem;
+  --font-size-up-mobile: 0.8rem;
+}
+@media (max-width: 480px) {
+  :root {
+    --font-size: var(--font-size-mobile);
+    --font-size-up: var(--font-size-up-mobile);
+    --margin-right-labelbox:: 1rem
+  }
 }
 
 body {

@@ -7,9 +7,10 @@
   border-bottom: 0.1rem solid #ccc;
   /* border: 0.1rem solid #ccc;
   border-radius: 1rem; */
-  font-size: 32px;
+  font-size: var(--font-size-up);
   color: var(--color-text);
   font-weight: bold;
+  min-width: 50%;
 }
 
 .toneLabel {
@@ -17,8 +18,7 @@
 }
 
 .toneSelect {
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 0.5rem;
   border-radius: 5px;
   font-size: var(--font-size);
 }
@@ -42,33 +42,36 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 14rem;
+  margin-right: var(--margin-right-labelbox); /*14rem*/
   color: var(--color-text);
+  font-size: var(--font-size);
 }
 
 .input {
   width: 8rem;
   padding: 0.3rem;
   /* border: 0.1rem solid #ccc; */
-  border-radius: 5px;
+  border-radius: 1rem;
   margin-left: 0.7rem;
   font-size: var(--font-size);
 }
 
 .submitButton {
+  display: flex;
+  justify-content: cneter;
   padding: 1rem 2rem;
-  width: 30%;
+  /* min-width: 150px; */
   background-color: #4caf50;
   color: rgb(208, 33, 33);
   font-size: var(--font-size-up);
   font-weight: bold;
   border: none;
-  border-radius: 5px;
+  border-radius: 1rem;
   cursor: pointer;
   outline: none;
   transition: transform 0.1s ease-in;
-  /* 세로방향 | 가로방향 */
-  margin: 3% 35%;
+  font-size: var(--font-size);
+  margin: 2% auto 3%;
 }
 .submitButton:active {
   transform: scale(0.95);

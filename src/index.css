@@ -8,14 +8,21 @@
   --font-size: 1rem;
   --font-size-up: 1.2rem;
   --margin-right-labelbox: 40%;
-  --font-size-mobile: 0.6rem;
-  --font-size-up-mobile: 0.8rem;
+  --font-size-mobile: 0.7rem;
+  --font-size-up-mobile: 0.9rem;
+  --title-font-size: 5rem;
+}
+@font-face {
+  font-family: "Omu";
+  font-weight: 50;
+  src: url("./fonts/omu.ttf") format("truetype");
 }
 @media (max-width: 480px) {
   :root {
     --font-size: var(--font-size-mobile);
     --font-size-up: var(--font-size-up-mobile);
-    --margin-right-labelbox:: 40%
+    --margin-right-labelbox:: 40%;
+    --title-font-size: 1.7rem;
   }
 }
 

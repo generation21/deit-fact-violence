@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Selector from "src/components/Selector";
 import ChatBot from "src/components/ChatBot";
 import LanguageSwitcher from "src/components/LanguageSwitcher";
@@ -62,6 +61,10 @@ export default function Home() {
         setGoal={setGoal}
       />
       <div className={styles.container}>
+        <h1 className={styles.title}>
+          {language === "ko" ? "다이어트 팩트 폭력" : "Diet Fact Violence"}
+        </h1>
+        <img src="/data/main.png" className={styles.image} />
         <Selector
           handleOnChageSetting={handleOnChageSetting}
           user={user}

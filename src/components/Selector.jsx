@@ -3,6 +3,7 @@ import styles from "./Selector.module.css";
 import { GiMuscleFat } from "react-icons/gi";
 
 import LanguageContext from "src/context/LanguageContext";
+import ShareLink from "./ShareLink";
 
 export default function Selector({
   handleOnChageSetting,
@@ -32,7 +33,7 @@ export default function Selector({
     <form onSubmit={handleSubmit}>
       <div className={styles.tone}>
         <label htmlFor="tone" className={styles.toneLabel}>
-          {language === "ko" ? "말투" : "tone"}
+          {language === "ko" ? "말투 선택" : "Choose a Tone"}
         </label>
 
         <select
@@ -104,6 +105,7 @@ export default function Selector({
           />
         </div>
       </div>
+
       <button type="submit" className={styles.submitButton}>
         {language === "ko" ? "팩폭 당하기" : "Fact Violence"} <GiMuscleFat />
       </button>

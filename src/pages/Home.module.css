@@ -7,3 +7,17 @@
   background-color: #000000;
   border-radius: 20px;
 }
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Omu;
+  color: var(--color-accent);
+  font-size: var(--title-font-size);
+}
+
+.image {
+  margin-left: 35%;
+  width: 30%;
+}

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import LanguageContext from "src/context/LanguageContext";
+import LoadingComponent from "./LoadingComponent";
 import styles from "./MessageCard.module.css";
 export default function MessageCard({ isLoading, paragraphs }) {
   const { language } = useContext(LanguageContext);
@@ -12,7 +13,10 @@ export default function MessageCard({ isLoading, paragraphs }) {
         alt="avatar"
       />
       {isLoading ? (
-        <div className={styles.loadingSpinner}></div>
+        <>
+          <div className={styles.loadingSpinner}></div>
+          <LoadingComponent />
+        </>
       ) : (
         paragraphs.map((paragraph, index) => (
           <p key={index} className={styles.paragraph}>

@@ -70,7 +70,20 @@ export default function Home() {
           style={{ borderRadius: "1rem" }}
         />
         <div className={styles.advertisement_shared}>
-          <div style={{ flex: "70%" }}></div>
+          {/* <div style={{ flex: "70%" }}>
+            <ins
+              class="kakao_ad_area"
+              style="display:none;"
+              data-ad-unit="DAN-9YrKRY8s5Ph9KYsY"
+              data-ad-width="728"
+              data-ad-height="90"
+            ></ins>
+            <script
+              type="text/javascript"
+              src="//t1.daumcdn.net/kas/static/ba.min.js"
+              async
+            ></script>
+          </div> */}
           <div style={{ flex: "30%" }}>
             <ShareLink />
           </div>

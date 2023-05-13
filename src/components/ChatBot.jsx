@@ -21,8 +21,8 @@ export default function ChatBot({ responseFlag, setting }) {
     ["openai", setting],
     async () => {
       return fetch(
-        // "https://mowe6sedlramx2zmolwusterzq0jklxy.lambda-url.ap-northeast-2.on.aws/ChatDietBrutalHonesty",
-        "http://localhost:8000/ChatDietBrutalHonesty",
+        "https://mowe6sedlramx2zmolwusterzq0jklxy.lambda-url.ap-northeast-2.on.aws/ChatDietBrutalHonesty",
+        // "http://localhost:8000/ChatDietBrutalHonesty",
         {
           method: "POST",
           headers: {

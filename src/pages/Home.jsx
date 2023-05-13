@@ -4,6 +4,7 @@ import ChatBot from "src/components/ChatBot";
 import LanguageSwitcher from "src/components/LanguageSwitcher";
 import styles from "./Home.module.css";
 import LanguageContext from "src/context/LanguageContext";
+import ShareLink from "src/components/ShareLink";
 
 export default function Home() {
   const { language } = useContext(LanguageContext);
@@ -16,7 +17,7 @@ export default function Home() {
     custom_tone: "",
   });
 
-  const [user, setUser] = useState("Chatbot");
+  const [user, setUser] = useState("돼돼");
   const [goal, setGoal] = useState("다이어트");
   const [food, setFood] = useState("피자");
   const [tone, setTone] = useState("츤데레");
@@ -30,7 +31,6 @@ export default function Home() {
   };
 
   const handleOnChageSetting = (e, name) => {
-    console.log(e.target.value);
     switch (name) {
       case "user":
         setUser(e.target.value);
@@ -64,7 +64,12 @@ export default function Home() {
         <h1 className={styles.title}>
           {language === "ko" ? "다이어트 팩트 폭력" : "Diet Fact Violence"}
         </h1>
-        <img src="/data/main.png" className={styles.image} />
+        <img
+          src="/data/pig.png"
+          className={styles.image}
+          style={{ borderRadius: "1rem" }}
+        />
+        <ShareLink />
         <Selector
           handleOnChageSetting={handleOnChageSetting}
           user={user}

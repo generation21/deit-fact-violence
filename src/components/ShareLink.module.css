@@ -1,8 +1,5 @@
 .container {
-  background-color: black;
+  background-color: #000000;
   display: flex;
   justify-content: flex-end;
-}
-.button {
-  border: 0;
 }

@@ -69,7 +69,12 @@ export default function Home() {
           className={styles.image}
           style={{ borderRadius: "1rem" }}
         />
-        <ShareLink />
+        <div className={styles.advertisement_shared}>
+          <div style={{ flex: "70%" }}></div>
+          <div style={{ flex: "30%" }}>
+            <ShareLink />
+          </div>
+        </div>
         <Selector
           handleOnChageSetting={handleOnChageSetting}
           user={user}

@@ -17,6 +17,12 @@
   font-size: var(--title-font-size);
 }
 
+.advertisement_shared {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
 .image {
   margin-left: 35%;
   width: 30%;

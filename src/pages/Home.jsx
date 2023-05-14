@@ -14,6 +14,7 @@ export default function Home() {
     goal: "",
     food: "",
     tone: "",
+    exercise: "",
     custom_tone: "",
   });
 
@@ -21,13 +22,14 @@ export default function Home() {
   const [goal, setGoal] = useState("다이어트");
   const [food, setFood] = useState("피자");
   const [tone, setTone] = useState("츤데레");
+  const [exercise, setExercise] = useState("걷기");
   const [customTone, setCustomTone] = useState("츤데레");
 
   const [responseFlag, setResponseFlage] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
     setResponseFlage((p) => (p += 1));
-    setSetting({ user, goal, food, tone, custom_tone: customTone });
+    setSetting({ user, goal, food, tone, exercise, custom_tone: customTone });
   };
 
   const handleOnChageSetting = (e, name) => {
@@ -47,6 +49,8 @@ export default function Home() {
       case "custom_tone":
         setCustomTone(e.target.value);
         break;
+      case "exercise":
+        setExercise(e.target.value);
       default:
         alert("어떤 값인지 파악이 되지 않습니다.");
     }
@@ -59,6 +63,7 @@ export default function Home() {
         setUser={setUser}
         setFood={setFood}
         setGoal={setGoal}
+        setExercise={setExercise}
       />
       <div className={styles.container}>
         <h1 className={styles.title}>
@@ -67,7 +72,14 @@ export default function Home() {
         <img
           src="/data/pig.png"
           className={styles.image}
-          style={{ borderRadius: "1rem" }}
+          style={{
+            borderRadius: "1rem",
+            height: "40%",
+            width: "40%",
+            alignContent: "center",
+            justifyContent: "center",
+            // marginLeft: "25%",
+          }}
         />
         <div className={styles.advertisement_shared}>
           {/* <div style={{ flex: "70%" }}>
@@ -95,6 +107,7 @@ export default function Home() {
           tone={tone}
           customTone={customTone}
           goal={goal}
+          exercise={exercise}
           handleSubmit={handleSubmit}
         />
 

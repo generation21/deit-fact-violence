@@ -7,9 +7,8 @@ import Error from "src/pages/Error";
 
 export default function MessageCard({ responseFlag, setting }) {
   const [isLoading, error, paragraphs] = OpenAI(responseFlag, setting);
-  console.log(paragraphs);
+
   const { language } = useContext(LanguageContext);
-  console.log(isLoading, error, paragraphs);
   if (error)
     return (
       <div className={styles.profile}>

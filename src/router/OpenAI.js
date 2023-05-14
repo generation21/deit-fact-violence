@@ -7,7 +7,6 @@ import { useQuery } from "@tanstack/react-query";
 import Error from "src/pages/Error";
 
 export default function OpenAI(responseFlag, setting) {
-  console.log(responseFlag, setting);
   const [result, setResult] = useState("");
   const [displayedResult, setDisplayedResult] = useState("");
 

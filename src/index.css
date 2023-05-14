@@ -9,8 +9,8 @@
   --chatbot-font-size: 1.3rem;
   --font-size-up: 4rem;
   --margin-right-labelbox: 40%;
-  --font-size-mobile: 0.7rem;
-  --font-size-up-mobile: 0.9rem;
+  --font-size-mobile: 1.1rem;
+  --font-size-up-mobile: 1.1rem;
   --title-font-size: 5rem;
 }
 @font-face {
@@ -24,7 +24,7 @@
     --font-size-up: var(--font-size-up-mobile);
     --chatbot-font-size: var(--font-size-mobile);
     --margin-right-labelbox:: 40%;
-    --title-font-size: 1.7rem;
+    --title-font-size: 2.5rem;
   }
 }
 

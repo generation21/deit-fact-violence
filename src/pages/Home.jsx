@@ -19,7 +19,7 @@ export default function Home() {
   });
 
   const [user, setUser] = useState("돼돼");
-  const [goal, setGoal] = useState("다이어트");
+  const [goal, setGoal] = useState("살빼기");
   const [food, setFood] = useState("피자");
   const [tone, setTone] = useState("츤데레");
   const [exercise, setExercise] = useState("걷기");

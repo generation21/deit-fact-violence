@@ -51,6 +51,7 @@ export default function Home() {
         break;
       case "exercise":
         setExercise(e.target.value);
+        break;
       default:
         alert("어떤 값인지 파악이 되지 않습니다.");
     }

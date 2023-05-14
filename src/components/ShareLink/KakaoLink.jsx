@@ -38,7 +38,7 @@ const shareKakao = (title) => {
         title: title, // 인자값으로 받은 title
         description:
           "다이어트 목표와 먹고 싶은 음식을 넣어주면 음식의 칼로리와 얼마나 운동해야되는지를 알려주는 웹입니다!!!", // 인자값으로 받은 title
-        imageUrl: "data/pig.png",
+        imageUrl: process.env.PUBLIC_URL + "/data/pig.png",
         link: {
           mobileWebUrl: HOMEPAGEURL, // 인자값으로 받은 route(uri 형태)
           webUrl: HOMEPAGEURL,

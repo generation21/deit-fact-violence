@@ -11,7 +11,7 @@ export default function KakaoLink() {
     return () => document.body.removeChild(script);
   }, []);
 
-  const title = "kakao";
+  const title = "다이어트 팩트 폭력 해주는 사이트!";
 
   return (
     <button onClick={() => shareKakao(title)}>
@@ -36,8 +36,9 @@ const shareKakao = (title) => {
       objectType: "feed", // 카카오 링크 공유 여러 type들 중 feed라는 타입 -> 자세한 건 카카오에서 확인
       content: {
         title: title, // 인자값으로 받은 title
-        description: "설명", // 인자값으로 받은 title
-        imageUrl: "/data/main2.png",
+        description:
+          "다이어트 목표와 먹고 싶은 음식을 넣어주면 음식의 칼로리와 얼마나 운동해야되는지를 알려주는 웹입니다!!!", // 인자값으로 받은 title
+        imageUrl: "/data/pig.png",
         link: {
           mobileWebUrl: HOMEPAGEURL, // 인자값으로 받은 route(uri 형태)
           webUrl: HOMEPAGEURL,

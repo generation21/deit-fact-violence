@@ -18,7 +18,7 @@ const LanguageSwitcher = ({
     language === "en" ? setTone("츤데레 말투") : setTone("softie inside tone");
     language === "en" ? setUser("사용자") : setUser("user");
     language === "en" ? setFood("피자") : setFood("Pizza");
-    language === "en" ? setGoal("다이어트") : setGoal("diet");
+    language === "en" ? setGoal("살빼기") : setGoal("diet");
     language === "en" ? setExercise("걷기") : setGoal("walking");
   };
 

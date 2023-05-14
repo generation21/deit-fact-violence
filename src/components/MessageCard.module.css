@@ -8,7 +8,7 @@
   margin: 1% auto;
   background-color: #ebebeb;
   border-radius: 20px;
-  font-size: var(--font-size-up);
+  font-size: var(--chatbot-font-size);
   /* margin-bottom: 1rem; */
   margin: 0rem auto 1rem;
   box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.75);

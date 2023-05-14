@@ -5,8 +5,9 @@
   --color-text: #ffffff;
   --color-accent: #f16e03;
   --color-white: white;
-  --font-size: 1rem;
-  --font-size-up: 1.2rem;
+  --font-size: 2rem;
+  --chatbot-font-size: 1.3rem;
+  --font-size-up: 4rem;
   --margin-right-labelbox: 40%;
   --font-size-mobile: 0.7rem;
   --font-size-up-mobile: 0.9rem;
@@ -21,6 +22,7 @@
   :root {
     --font-size: var(--font-size-mobile);
     --font-size-up: var(--font-size-up-mobile);
+    --chatbot-font-size: var(--font-size-mobile);
     --margin-right-labelbox:: 40%;
     --title-font-size: 1.7rem;
   }

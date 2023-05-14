@@ -12,6 +12,7 @@ export default function Selector({
   tone,
   customTone,
   goal,
+  exercise,
   handleSubmit,
 }) {
   const [showCustomTone, setShowCustomTone] = useState(false);
@@ -55,13 +56,13 @@ export default function Selector({
         </select>
         {showCustomTone && (
           <div className={styles.customToneForm}>
-            <label htmlFor="customTone" className={styles.label}>
+            <label className={styles.customToneLabel}>
               {language === "ko" ? "사용자 지정 말투" : "custom tone"}
             </label>
             <input
               type="text"
               id="customTone"
-              className={styles.input}
+              className={styles.customToneInput}
               value={customTone}
               onChange={(e) => handleOnChageSetting(e, "custom_tone")}
             />
@@ -102,6 +103,19 @@ export default function Selector({
             className={styles.input}
             value={food}
             onChange={(e) => handleOnChageSetting(e, "food")}
+          />
+        </div>
+        <div className={styles.label}>
+          {language === "ko"
+            ? "이 칼로리를 태울 운동은 "
+            : "The exercise that will burn these calories is"}
+
+          <input
+            type="text"
+            id="exercise"
+            className={styles.input}
+            value={exercise}
+            onChange={(e) => handleOnChageSetting(e, "exercise")}
           />
         </div>
       </div>

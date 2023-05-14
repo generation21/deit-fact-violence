@@ -26,9 +26,29 @@
 }
 .customToneForm {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: auto;
+  align-items: center;
 }
+.customToneLabel {
+  /* padding: 1rem; */
+  /* justify-content: flex-end; */
+  height: 10%;
+  align-items: center;
+  /* margin-right: var(--margin-right-labelbox);  */
+  color: var(--color-text);
+  font-size: var(--font-size);
+  font-family: Omu;
+}
+.customToneInput {
+  width: 70%;
+  padding: 0.3rem;
+  /* border: 0.1rem solid #ccc; */
+  border-radius: 1rem;
+  margin-left: 0.7rem;
+  font-size: var(--font-size);
+}
+
 .formGroup {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,50 @@
+.tone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-bottom: 0.1rem solid #ccc;
+  /* border: 0.1rem solid #ccc;
+    border-radius: 1rem; */
+  font-size: var(--font-size-up);
+  color: var(--color-text);
+  font-family: Omu;
+  font-weight: bold;
+  min-width: 50%;
+}
+
+.toneLabel {
+  margin-right: 1rem;
+}
+
+.toneSelect {
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: Omu;
+  font-size: var(--font-size);
+}
+.customToneForm {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+.customToneLabel {
+  /* padding: 1rem; */
+  /* justify-content: flex-end; */
+  height: 10%;
+  align-items: center;
+  /* margin-right: var(--margin-right-labelbox);  */
+  color: var(--color-text);
+  font-size: var(--font-size);
+  font-family: Omu;
+}
+.customToneInput {
+  width: 70%;
+  padding: 0.3rem;
+  /* border: 0.1rem solid #ccc; */
+  border-radius: 1rem;
+  margin-left: 0.7rem;
+  font-size: var(--font-size);
+}

@@ -1,0 +1,21 @@
+.submitButton {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  margin-left: 50%;
+  /* min-width: 150px; */
+  background-color: #4caf50;
+  color: rgb(208, 33, 33);
+  font-size: var(--font-size-up);
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.1s ease-in;
+  font-size: var(--font-size);
+  margin: 2% auto 3%;
+}
+.submitButton:active {
+  transform: scale(0.95);
+}

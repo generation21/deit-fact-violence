@@ -4,7 +4,13 @@ import { useContext } from "react";
 import LanguageContext from "src/context/LanguageContext";
 import styles from "./LanguageSwitcher.module.css";
 
-const LanguageSwitcher = ({ setTone, setUser, setFood, setGoal }) => {
+const LanguageSwitcher = ({
+  setTone,
+  setUser,
+  setFood,
+  setGoal,
+  setExercise,
+}) => {
   const { language, setLanguage } = useContext(LanguageContext);
 
   const handleLanguageSwitch = (e) => {
@@ -13,6 +19,7 @@ const LanguageSwitcher = ({ setTone, setUser, setFood, setGoal }) => {
     language === "en" ? setUser("사용자") : setUser("user");
     language === "en" ? setFood("피자") : setFood("Pizza");
     language === "en" ? setGoal("다이어트") : setGoal("diet");
+    language === "en" ? setExercise("걷기") : setGoal("walking");
   };
 
   return (

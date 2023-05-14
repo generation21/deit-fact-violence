@@ -1,13 +1,13 @@
 import React, { useContext, useState } from "react";
 import { useEffect } from "react";
-import styles from "./ChatBot.module.css";
 
-import MessageCard from "./MessageCard";
+// import MessageCard from "./MessageCard";
 import LanguageContext from "src/context/LanguageContext";
 import { useQuery } from "@tanstack/react-query";
 import Error from "src/pages/Error";
 
-export default function ChatBot({ responseFlag, setting }) {
+export default function OpenAI(responseFlag, setting) {
+  console.log(responseFlag, setting);
   const [result, setResult] = useState("");
   const [displayedResult, setDisplayedResult] = useState("");
 
@@ -72,16 +72,14 @@ export default function ChatBot({ responseFlag, setting }) {
     return () => clearInterval(typingAnimation);
   }, [result]);
 
-  if (isLoading) return <MessageCard isLoading={isLoading} />;
-  if (error) return <Error />;
+  if (isLoading) return [isLoading, error, ""];
+  if (error) return [isLoading, error, ""];
+  //   if (isLoading) return <MessageCard isLoading={isLoading} />;
+  //   if (error) return <Error />;
 
   const paragraphs = splitMessageIntoParagraphs(displayedResult);
 
-  return (
-    // <div className={styles.messagesContainer}>
-    <MessageCard isLoading={isLoading} paragraphs={paragraphs} />
-    // </div>
-  );
+  return [isLoading, error, paragraphs];
 }
 
 function splitMessageIntoParagraphs(message) {

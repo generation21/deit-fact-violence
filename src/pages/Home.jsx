@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
-import Selector from "src/components/Selector";
-import ChatBot from "src/components/ChatBot";
+import Selector from "src/pages/Selector";
 import LanguageSwitcher from "src/components/LanguageSwitcher";
 import styles from "./Home.module.css";
 import LanguageContext from "src/context/LanguageContext";
 import ShareLink from "src/components/ShareLink";
+import MessageCard from "./MessageCard";
 
 export default function Home() {
   const { language } = useContext(LanguageContext);
@@ -25,7 +25,7 @@ export default function Home() {
   const [exercise, setExercise] = useState("걷기");
   const [customTone, setCustomTone] = useState("츤데레");
 
-  const [responseFlag, setResponseFlage] = useState(false);
+  const [responseFlag, setResponseFlage] = useState(0);
   const handleSubmit = (e) => {
     e.preventDefault();
     setResponseFlage((p) => (p += 1));
@@ -75,11 +75,11 @@ export default function Home() {
           className={styles.image}
           style={{
             borderRadius: "1rem",
-            height: "40%",
-            width: "40%",
+            height: "50%",
+            width: "50%",
             alignContent: "center",
             justifyContent: "center",
-            // marginLeft: "25%",
+            marginLeft: "25%",
           }}
         />
         <div className={styles.advertisement_shared}>
@@ -112,11 +112,7 @@ export default function Home() {
           handleSubmit={handleSubmit}
         />
 
-        <ChatBot
-          key={responseFlag}
-          responseFlag={responseFlag}
-          setting={setting}
-        />
+        <MessageCard responseFlag={responseFlag} setting={setting} />
       </div>
     </>
   );

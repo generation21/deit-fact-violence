@@ -1,0 +1,11 @@
+.description {
+  width: 80%;
+  height: 50%;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 1rem;
+  font-family: Omu;
+  font-size: var(--description-font-size);
+  font-weight: 700;
+}

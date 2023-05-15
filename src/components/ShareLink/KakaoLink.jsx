@@ -37,7 +37,7 @@ const shareKakao = (title) => {
       content: {
         title: title, // 인자값으로 받은 title
         description:
-          "다이어트 목표와 먹고 싶은 음식을 넣어주면 음식의 칼로리와 얼마나 운동해야되는지를 알려주는 웹입니다!!!", // 인자값으로 받은 title
+          "다이어트를 하고있는 당신! 날씬해지고싶어하는 당신! 근데 지금 맛있는게 먹고싶다고요? 맙소사!! 정말 그 음식을 먹어도되는지 지금 바로 돼지야~!에게 물어보세요!", // 인자값으로 받은 title
         imageUrl:
           "https://drive.google.com/uc?export=view&id=14WzjUGpnokA4Q7aUCsnJ4kzEb2h3Cp9k",
         link: {

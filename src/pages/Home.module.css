@@ -18,15 +18,31 @@
   font-family: Omu;
   color: var(--color-accent);
   font-size: var(--title-font-size);
+  padding: 0%;
+  padding-bottom: 0.1rem;
 }
 
 .advertisement_shared {
   display: flex;
-  flex-direction: row;
-  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .image {
-  margin-left: 35%;
-  width: 30%;
+  border-radius: 1rem;
+  height: 50%;
+  width: 50%;
+  justify-content: center;
+  align-content: center;
+  margin-left: 25%;
+  margin-top: -10%;
 }
+/* style={{
+  borderRadius: "1rem",
+  height: "50%",
+  width: "50%",
+  alignContent: "center",
+  justifyContent: "center",
+  marginLeft: "25%",
+}} */

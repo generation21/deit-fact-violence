@@ -1,10 +1,14 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Selector from "src/pages/Selector";
 import LanguageSwitcher from "src/components/LanguageSwitcher";
 import styles from "./Home.module.css";
 import LanguageContext from "src/context/LanguageContext";
 import ShareLink from "src/components/ShareLink";
 import MessageCard from "./MessageCard";
+import Description from "src/pages/description/Description";
+
+import { GoogleAdvertise } from "src/components/Advertisement/GoogleAdvertise";
+import KakaoAdvertise from "src/components/Advertisement/KakaoAdvertise";
 
 export default function Home() {
   const { language } = useContext(LanguageContext);
@@ -57,6 +61,8 @@ export default function Home() {
     }
   };
 
+  //GoogleAdvertise.js
+
   return (
     <>
       <LanguageSwitcher
@@ -68,38 +74,16 @@ export default function Home() {
       />
       <div className={styles.container}>
         <h1 className={styles.title}>
-          {language === "ko" ? "다이어트 팩트 폭력" : "Diet Fact Violence"}
+          {language === "ko" ? "돼지야~!" : "Diet Fact Violence"}
         </h1>
-        <img
-          src="/data/pig.png"
-          className={styles.image}
-          style={{
-            borderRadius: "1rem",
-            height: "50%",
-            width: "50%",
-            alignContent: "center",
-            justifyContent: "center",
-            marginLeft: "25%",
-          }}
-        />
+        <img src="/data/pig.png" className={styles.image} />
+        <Description />
         <div className={styles.advertisement_shared}>
-          {/* <div style={{ flex: "70%" }}>
-            <ins
-              class="kakao_ad_area"
-              style="display:none;"
-              data-ad-unit="DAN-9YrKRY8s5Ph9KYsY"
-              data-ad-width="728"
-              data-ad-height="90"
-            ></ins>
-            <script
-              type="text/javascript"
-              src="//t1.daumcdn.net/kas/static/ba.min.js"
-              async
-            ></script>
-          </div> */}
-          <div style={{ flex: "30%" }}>
-            <ShareLink />
-          </div>
+          {/* <div className="adfit" style={{ flex: "70%", width: "100%" }} /> */}
+
+          <KakaoAdvertise />
+
+          <ShareLink />
         </div>
         <Selector
           handleOnChageSetting={handleOnChageSetting}
@@ -113,6 +97,8 @@ export default function Home() {
         />
 
         <MessageCard responseFlag={responseFlag} setting={setting} />
+
+        <GoogleAdvertise />
       </div>
     </>
   );

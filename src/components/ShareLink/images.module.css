@@ -1,4 +1,5 @@
 .image {
-  width: var(--font-size);
-  height: var(--font-size);
+  width: var(--share-link-width);
+  height: var(--share-link-height);
 }
+/* var(--font-size); */

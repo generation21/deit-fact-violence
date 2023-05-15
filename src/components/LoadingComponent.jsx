@@ -39,5 +39,10 @@ export default function LoadingComponent() {
     return () => clearInterval(messageInterval);
   }, [fullMessage]);
 
-  return <>{currentMessage}</>;
+  return (
+    <>
+      <div>약 1분 정도 걸립니다!</div>
+      {currentMessage}
+    </>
+  );
 }

@@ -11,7 +11,10 @@
   --margin-right-labelbox: 40%;
   --font-size-mobile: 1.1rem;
   --font-size-up-mobile: 1.1rem;
-  --title-font-size: 5rem;
+  --title-font-size: 10rem;
+  --description-font-size: 2rem;
+  --share-link-height: 3rem;
+  --share-link-width: 3rem;
 }
 @font-face {
   font-family: "Omu";
@@ -24,7 +27,10 @@
     --font-size-up: var(--font-size-up-mobile);
     --chatbot-font-size: var(--font-size-mobile);
     --margin-right-labelbox:: 40%;
-    --title-font-size: 2.5rem;
+    --title-font-size: 2.2rem;
+    --description-font-size: 0.9rem;
+    --share-link-height: 1rem;
+    --share-link-width: 1rem;
   }
 }
 

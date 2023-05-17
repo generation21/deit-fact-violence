@@ -15,7 +15,7 @@ export default function KakaoAdvertise() {
     scr.type = "text/javascript";
     scr.src = "//t1.daumcdn.net/kas/static/ba.min.js";
     const winodwSize = window.innerWidth;
-    console.log(winodwSize);
+
     if (winodwSize < 1024) {
       ins.setAttribute("data-ad-width", "320");
       ins.setAttribute("data-ad-height", "100");

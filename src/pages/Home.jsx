@@ -7,7 +7,7 @@ import ShareLink from "src/components/ShareLink";
 import MessageCard from "./MessageCard";
 import Description from "src/pages/description/Description";
 
-import { GoogleAdvertise } from "src/components/Advertisement/GoogleAdvertise";
+import KakaoAdvertiseBottom from "src/components/Advertisement/KakaoAdvertiseBottom";
 import KakaoAdvertise from "src/components/Advertisement/KakaoAdvertise";
 
 export default function Home() {
@@ -97,8 +97,15 @@ export default function Home() {
         />
 
         <MessageCard responseFlag={responseFlag} setting={setting} />
-
-        <GoogleAdvertise />
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <KakaoAdvertiseBottom />
+        </div>
       </div>
     </>
   );

@@ -96,7 +96,9 @@ export default function Home() {
           handleSubmit={handleSubmit}
         />
 
-        <MessageCard responseFlag={responseFlag} setting={setting} />
+        {responseFlag > 0 && (
+          <MessageCard responseFlag={responseFlag} setting={setting} />
+        )}
         <div
           style={{
             display: "flex",
